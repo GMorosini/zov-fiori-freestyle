@@ -8,9 +8,5 @@ function (Controller) {
         onInit: function(){
 
         },
-
-        onPress: function (){
-            alert("Hello World!");
-        }
     });
 });
