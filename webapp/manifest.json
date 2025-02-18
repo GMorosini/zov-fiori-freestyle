@@ -100,6 +100,22 @@
                     "target": [
                         "TargetView1"
                     ]
+                },
+
+                {
+                  "name": "RouteCustomerNew",
+                  "pattern": "customer/new",
+                  "target": [
+                    "TargetCustomerForm"
+                  ]
+                },
+                
+                {
+                  "name": "RouteCustomerEdit",
+                  "pattern": "customer/{CustomerId}/edit",
+                  "target": [
+                    "TargetCustomerForm"
+                  ]
                 }
             ],
             "targets": {
@@ -109,6 +125,14 @@
                     "clearControlAggregation": false,
                     "viewId": "View1",
                     "viewName": "View1"
+                },
+
+                "TargetCustomerForm": {
+                  "viewType": "XML",
+                  "transition": "slide",
+                  "clearControlAggregation": false,
+                  "viewId": "CustomerFormView",
+                  "viewName": "CustomerFormView"
                 }
             }
         },
