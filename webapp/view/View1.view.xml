@@ -5,7 +5,7 @@
     xmlns:fb="sap.ui.comp.filterbar"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-<fb:FilterBar id="filterBar1" reset="onFilterReset" search="onFilterSearch">
+	<fb:FilterBar id="filterBar1" reset="onFilterReset" search="onFilterSearch">
 		<fb:filterItems>
 			<fb:FilterItem name="OrdemId" label="{i18n>OrdemId}">
 				<fb:control>
@@ -51,13 +51,19 @@
 		</fb:filterItems>
 	</fb:FilterBar>
 
+	<FlexBox alignItems="Center" justifyContent="End">
+		<Button text="Fornecer" class="sapUiTinyMarginEnd" press="onAtualizarStatus('L')"/>
+		<Button text="Faturar" class="sapUiTinyMarginEnd" press="onAtualizarStatus('F')"/>
+		<Button text="Cancelar" class="sapUiTinyMarginEnd" press="onAtualizarStatus('C')"/>
+	</FlexBox>
+
 	<t:Table id="table1"
 		rows="{/OVCabSet}"
 		selectionMode="MultiToggle"
 		class="sapUiSmallMargin"
 		rowMode="Fixed"
-		threshold="5"
-		visibleRowCount="5"
+		threshold="10"
+		visibleRowCount="10"
 		enableBusyIndicator="true"
 		>
 		<t:toolbar>

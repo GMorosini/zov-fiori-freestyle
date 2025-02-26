@@ -27,7 +27,7 @@ sap.ui.define([
                     "Limite": 10,
                     "Offset": 0
                 });
-                oView.setModel(oFModel,"filter");
+                oView.setModel(oFModel,"filter"); 
 
                 var oTModel = new sap.ui.model.json.JSONModel();
                 oTModel.setData([]);
