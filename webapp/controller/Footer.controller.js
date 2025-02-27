@@ -1,6 +1,6 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/m/MessageToast",
+    "sap/m/MessageToast"
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
@@ -8,12 +8,12 @@ sap.ui.define([
     function (Controller,MessageToast) {
         "use strict";
 
-        return Controller.extend("zov.controller.View1", {
+        return Controller.extend("zov.controller.Footer", {
             onInit: function () {
             },
 
-            onHeader: function(){
-                alert("onHeader");
+            onFooter: function(){
+                alert("onFooter");
             }
         });
     });
