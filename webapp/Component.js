@@ -12,7 +12,7 @@ sap.ui.define([
 
         return UIComponent.extend("zov.Component", {
             metadata: {
-                manifest: "json"
+                manifest: "json",
             },
 
             /**
