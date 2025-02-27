@@ -5,6 +5,10 @@
     xmlns:fb="sap.ui.comp.filterbar"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-        <Button text="Test" press="onTest" />
+        <VBox class="sapUiSmallMargin">
+            <Label text="Id Ordem"/>
+            <Input value="" id="ordemid"/>
+	  	    <Button text="Exibir Total" press="onExibirTotal" />
+        </VBox>
     </Page>
 </mvc:View>
